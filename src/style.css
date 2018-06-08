@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  font-family: cursive;
+  font-size: 17px;
+  background: gainsboro;
+}
+h1, strong {
+  color: deeppink;
+}
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 9px 7px;
+  border-radius: 5px;
+  cursor: pointer
+}
+button:hover {
+  background: pink;
+  color: black;
+  font-weight: bold;
+}
+input {
+  padding: 10px;
+}
