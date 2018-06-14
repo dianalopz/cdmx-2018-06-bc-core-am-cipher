@@ -4,23 +4,42 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
   </head>
+  <header>
+    <div class="titulo">
+    <h1>Mensaje Secreto</h1>
+    </div>
+    <div class="candados">
+      <img src="candadoGrande.png" alt="candado" id="candadoGrande">
+      <img src="candadoChico.png" alt="candado" id="candadoChico">
+    </div>
+  </header>
   <body>
-
-    <h1>Bienvenid@</h1>
-
+  <div class="contenido">
+    <p><span>Hola</span> ¡Vamos a crear un mensaje secreto!</p>
+    <p>A continuación puedes escribir tu mensaje y elegir un numero de clave con el que se descifrará, solo tu y la persona que tenga la clave podrán ver el mensaje</p>
+    <p>¿No es genial? ¡Inténtalo!</p>
     <form>
-      <p>En este pequeño programa podremos enviar un mensaje <strong>secreto</strong> para nuestros amigos, intentalo!</p>
-      <p>Introduce el msj que deseas Encriptar / Desencriptar:</p>
-      <input type="text" id="msj">
-      <button onclick="encriptar()">Encriptar</button>
-      <button onclick="desencriptar()">Desencriptar</button>
+      <textarea placeholder="Escribe aquí tu mensaje" rows="6" cols="60" id="msj" required></textarea>
+      <span class="required">*</span>
     </form>
-
+    <form id="numClave">
+      <p>Núm. clave de tu mensaje:</p>
+      <input type="number" id="saltos" min="1" max="129" value="1" required>
+      <span class="required">*</span>
+    </form>
+    <p></p>
+    <button onclick="encriptar()" id="encriptar">Encriptar</button>
+    <button onclick="desencriptar()" id="desencriptar">Desencriptar</button>
     <p id="imprimir"></p>
-
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+  </div>
   </body>
+  <footer>
+    <p id="textoFooter">Mantén el secreto shh...</p>
+    <img src="llave.png" alt="llave" id="llave">
+  </footer>
 </html>
