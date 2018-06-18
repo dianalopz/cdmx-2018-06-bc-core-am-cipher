@@ -30,9 +30,9 @@
       <span class="required">*</span>
     </form>
     <p></p>
-    <button onclick="encriptar()" id="encriptar">Encriptar</button>
-    <button onclick="desencriptar()" id="desencriptar">Desencriptar</button>
-    <p id="imprimir"></p>
+    <button onclick="cipher.encode" id="encriptar">Encriptar</button>
+    <button onclick="cipher.decode" id="desencriptar">Desencriptar</button>
+    <p id="message">Tu mensaje es: <span id="imprimir"></span></p>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

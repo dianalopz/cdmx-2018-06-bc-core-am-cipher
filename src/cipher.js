@@ -1,9 +1,50 @@
 window.cipher = {
-  // ...
+  //Objeto1 Codifica
+  encode: (string,offset) => {
+  let resultado = "";
+  let nuevaPosicion = 0;
+
+    for (let i = 0; i < string.length; i++) {
+      let posicionAscii = string.charCodeAt(i);
+      if (posicionAscii == 32) {
+        nuevaPosicion = 32;
+      } else {
+        nuevaPosicion = (posicionAscii-65+parseInt(offset))%26+65;
+      }
+      resultado += String.fromCharCode(nuevaPosicion);
+      //var final = resultado.join('');
+      //console.log(final);
+    }
+    return resultado;
+  },
+
+  //Objeto2 Decodifica
+  decode: (string,offset) => {
+  let resultado = [];
+  let nuevaPosicion = 0;
+
+    for (let i = 0; i < string.length; i++) {
+      let posicionAscii = string.charCodeAt(i);
+      if (posicionAscii == 32) {
+        nuevaPosicion = 32;
+      } else {
+        nuevaPosicion = (posicionAscii+65-parseInt(offset))%26+65;
+      }
+      resultado.push(String.fromCharCode(nuevaPosicion));
+      var final = resultado.join('');
+      console.log(final);
+    }
+    return final;
+  },
+
+  //Hacker edition
+  createCipherWithOffset: (offset) => {
+    //objeto con 2 funciones
+  },
 };
 
 //Funcion para Encriptar
-function encriptar() {
+/*function encriptar() {
   //Evita que el form recarge la pagina
   event.preventDefault()
   //Inicialisa arreglo
@@ -66,4 +107,4 @@ function desencriptar() {
     console.log(resultado);
   }
   document.getElementById("imprimir").innerHTML = "Tu mensaje real es: " + final;
-};
+};*/

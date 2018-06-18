@@ -1,5 +1,23 @@
 # Cifrado César
 
+##### Mi "README" Diana #####
+Este Cifrado Cesar esta basado en amigos y familiares, pensando en ocupar la herramienta principalmente para organizar una fiesta y no ser descubiertos.
+
+Al diseñar la herramienta el principal objetivo fue que cualquier persona sin importar su edad pudiera utilizarla (grandes o chicos), con experiencia en el uso de la computadora o que no suelan ocuparla, por lo cual se pretende que sea de interfaz simple e intuitiva.
+
+* Para el proceso de diseño el primer paso fue definir a los usuarios
+
+* Teniendo en claro esto se preocedio a diseñar un primer maquetado en una hoja de papel, para poder hubicar las partes principales
+
+* Posteriormente se realizo un segundo diseño en la plataforma canva.com para poder definir colores y espacios en el maquetado
+
+* Teniendo ya una primera version del producto se procedio a provarlo con diferentes usuarios para saber su actitud frente a este, mediante este proceso nos dimos cuenta que el producto era bueno, pero faltaba un poco mas de dinamismo que invitara al usuario a utilizarlo.
+
+* Partiendo de estos resultados se procedio a mejorar la interfaz y textos de la plataforma para ser mas dinamica y divertida :)
+
+##### FIN #####
+---------------
+
 ## Preámbulo
 
 Está próxima la fecha del cumpleaños de tu flacx (novix) y estás organizando una
